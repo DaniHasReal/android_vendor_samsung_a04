@@ -9137,23 +9137,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libhyper",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libhyper.so"],
-			shared_libs: ["libutils", "libcutils", "libhardware", "liblog", "libbase", "libjsoncpp", "libcrypto", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libifcutils_mtk",
 	owner: "samsung",
 	strip: {
